@@ -1,0 +1,115 @@
+import React from 'react';
+
+/**
+ * Application-wide constants and configuration
+ */
+
+export const ROUTES = {
+  HOME: '/',
+  GENERATE: '/generate',
+  SAVED: '/saved',
+  PROFILE: '/profile',
+  PREFERENCES: '/preferences',
+  ONBOARDING: '/onboarding',
+  CONTACT: '/contact',
+} as const;
+
+export const DIETARY_RESTRICTIONS = [
+  'None',
+  'Vegetarian',
+  'Vegan',
+  'Gluten-Free',
+  'Dairy-Free',
+  'Keto',
+  'Paleo',
+  'Low-Carb',
+  'Low-Fat',
+] as const;
+
+export const COOKING_EXPERIENCE = [
+  'Beginner',
+  'Intermediate',
+  'Advanced',
+  'Professional',
+] as const;
+
+export const KITCHEN_EQUIPMENT = [
+  'Stove',
+  'Oven',
+  'Microwave',
+  'Blender',
+  'Food Processor',
+  'Slow Cooker',
+  'Pressure Cooker',
+  'Air Fryer',
+  'Grill',
+] as const;
+
+export const CUISINES = [
+  'Italian',
+  'Mexican',
+  'Chinese',
+  'Japanese',
+  'Indian',
+  'French',
+  'Mediterranean',
+  'American',
+  'Thai',
+  'Korean',
+] as const;
+
+export const MEAL_PREFERENCES = [
+  'Quick & Easy',
+  'Healthy',
+  'Budget-Friendly',
+  'Gourmet',
+  'One-Pot Meals',
+  'Meal Prep',
+  'Family-Friendly',
+  'Low-Calorie',
+] as const;
+
+export const COMMON_INGREDIENTS = [
+  'Chicken',
+  'Beef',
+  'Fish',
+  'Rice',
+  'Pasta',
+  'Potatoes',
+  'Tomatoes',
+  'Onions',
+  'Garlic',
+  'Eggs',
+  'Cheese',
+  'Bread',
+] as const;
+
+export const NAV_ICONS = {
+  HOME: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+    </svg>
+  ),
+  GENERATE: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+    </svg>
+  ),
+  SAVED: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+    </svg>
+  ),
+  CONTACT: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>
+  ),
+} as const;
+
+export const NAV_ITEMS = [
+  { href: ROUTES.HOME, label: 'Home', icon: NAV_ICONS.HOME },
+  { href: ROUTES.GENERATE, label: 'Generate', icon: NAV_ICONS.GENERATE },
+  { href: ROUTES.SAVED, label: 'Saved', icon: NAV_ICONS.SAVED },
+  { href: ROUTES.CONTACT, label: 'Contact', icon: NAV_ICONS.CONTACT },
+] as const; 
